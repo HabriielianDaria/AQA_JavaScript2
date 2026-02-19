@@ -8,7 +8,7 @@ export default defineConfig([
     plugins: { js },
     extends: ["js/recommended"],
     languageOptions: {
-      globals: { ...globals.node, ...globals.browser },
+      globals: { ...globals.node, ...globals.browser, ...globals.jest },
       parserOptions: {
         ecmaVersion: 2021,
         sourceType: "script", // для CommonJS
