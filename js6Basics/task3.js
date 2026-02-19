@@ -1,0 +1,35 @@
+function divide(numerator, denominator) {
+  if (typeof numerator !== "number" || typeof denominator !== "number") {
+    throw new Error("Both arguments must be numbers");
+  }
+
+  if (denominator === 0) {
+    throw new Error("Denominator cannot be zero");
+  }
+
+  return numerator / denominator;
+}
+
+try {
+  console.log(divide(100, 22));
+} catch (error) {
+  console.log("Error:", error.message);
+} finally {
+  console.log("Робота завершена");
+}
+
+try {
+  console.log(divide(100, 0));
+} catch (error) {
+  console.log("Error:", error.message);
+} finally {
+  console.log("Робота завершена");
+}
+
+try {
+  console.log(divide(12, "a"));
+} catch (error) {
+  console.log("Error:", error.message);
+} finally {
+  console.log("Робота завершена");
+}
