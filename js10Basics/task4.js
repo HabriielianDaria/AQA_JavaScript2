@@ -15,9 +15,9 @@ class UserService {
 const todoService = new TodoService();
 const userService = new UserService();
 
-Promise.all([todoService.getTodo(), userService.getUser()])
-  .then(([todo, user]) => {
+Promise.all([todoService.getTodo(), userService.getUser()]).then(
+  ([todo, user]) => {
     console.log(todo);
     console.log(user);
-  });
-
+  },
+);

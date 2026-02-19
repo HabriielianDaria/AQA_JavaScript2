@@ -18,7 +18,7 @@ async function getAllData() {
   try {
     const [todo, user] = await Promise.all([
       fetchTodoAsync(),
-      fetchUserAsync()
+      fetchUserAsync(),
     ]);
 
     console.log("Async Promise.all:");
@@ -33,10 +33,7 @@ getAllData();
 
 async function getFirstData() {
   try {
-    const result = await Promise.race([
-      fetchTodoAsync(),
-      fetchUserAsync()
-    ]);
+    const result = await Promise.race([fetchTodoAsync(), fetchUserAsync()]);
 
     console.log("Async Promise.race:");
     console.log(result);
