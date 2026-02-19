@@ -1,5 +1,5 @@
 {
-  "name": "aqa_javascript",
+  "name": "aqa_javascript2",
   "version": "1.0.0",
   "description": "New course",
   "main": "index.js",
@@ -12,22 +12,32 @@
     "eslint-plugin-react": "^7.37.5",
     "globals": "^17.3.0",
     "husky": "^9.1.7",
-    "prettier": "^3.8.1"
+    "prettier": "^3.8.1",
+    "lint-staged": "^14.0.0"
   },
   "scripts": {
     "lint": "eslint .",
     "format": "prettier --write .",
+    "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HabriielianDaria/AQA_JavaScript.git"
+    "url": "git+https://github.com/HabriielianDaria/AQA_JavaScript2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HabriielianDaria/AQA_JavaScript/issues"
+    "url": "https://github.com/HabriielianDaria/AQA_JavaScript2/issues"
   },
-  "homepage": "https://github.com/HabriielianDaria/AQA_JavaScript#readme"
+  "homepage": "https://github.com/HabriielianDaria/AQA_JavaScript2#readme"
 }
+
