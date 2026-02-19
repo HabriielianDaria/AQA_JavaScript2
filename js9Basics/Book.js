@@ -43,14 +43,14 @@ class Book {
   //methods
   printInfo() {
     console.log(
-      `Title: ${this.title}, Author: ${this.author}, Year: ${this.year}`
+      `Title: ${this.title}, Author: ${this.author}, Year: ${this.year}`,
     );
   }
 
   //static method
   static findOldestBook(books) {
     return books.reduce((oldest, current) =>
-      current.year < oldest.year ? current : oldest
+      current.year < oldest.year ? current : oldest,
     );
   }
 }

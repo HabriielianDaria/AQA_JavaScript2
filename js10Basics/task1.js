@@ -5,5 +5,3 @@ function showTextAfterDelay(text, delay) {
 }
 
 showTextAfterDelay("It will be 3 seconds delay", 3000);
-
-

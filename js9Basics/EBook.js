@@ -22,7 +22,7 @@ class EBook extends Book {
   // перевизначений метод
   printInfo() {
     console.log(
-      `Title: ${this.title}, Author: ${this.author}, Year: ${this.year}, Format: ${this.fileFormat}`
+      `Title: ${this.title}, Author: ${this.author}, Year: ${this.year}, Format: ${this.fileFormat}`,
     );
   }
 
